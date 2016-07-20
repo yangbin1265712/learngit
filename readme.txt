@@ -3,3 +3,5 @@ Git is free software...
 ADD
 sss
 Git tracks changes fo files.
+
+Creating a new branch is quick.
