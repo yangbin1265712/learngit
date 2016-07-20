@@ -1,0 +1,78 @@
+
+##########第四个版本15:13 2016/7/18###########
+2988 接口组--中信微信扫码新增一新通道
+CSPInstructionService
+/DPP/CSP/CSPInstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/scan/ReverseScanPayServiceFactory.java
+/DPP/CSP/CSPInstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/refundquery/OrderRefundResultFactory.java
+
+
+
+##########第三个版本 18:08 2016/7/15 ###########
+2988 接口组--中信微信扫码新增一新通道
+
+SystemDomain
+/DPP/BusinessModel/SystemDomain/src/main/java/com/dinpay/dpp/domain/system/enums/PayChannelCode.java
+
+InstructionService(SystemDomain)
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/scan/impl/SwiftpassReverseScanPayServiceImpl.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/refund/impl/SwiftpassReverseScanRefundServiceImpl.java	
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/refundquery/impl/SwiftpassReverseScanQueryRefundResultImpl.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/instruction/GetPayInstrutctionFactory.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/refund/OrderRefundFactory.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/validate/PaymentResultValidateFactory.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/comm/util/bankfile/SwiftpassReverseScanProperties.java	
+	 
+CSPQueryInstructionService(SystemDomain)
+CSPQueryInstructionService/src/main/java/com/dinpay/dpp/csp/queryBank/service/query/query/impl/SwiftpassReverseScanQueryOrderResultImpl.java	
+CSPQueryInstructionService/src/main/java/com/dinpay/dpp/csp/queryBank/service/query/query/QueryOrderResultFactory.java
+CSPQueryInstructionService/src/main/java/com/dinpay/dpp/csp/queryBank/comm/bankfile/SwiftpassReverseScanProperties.java
+
+
+IPPBankGateway(SystemDomain)
+IPPBankGateway/WebRoot/WEB-INF/web.xml
+/DPP/IPP/IPPBankGateway/src/main/java/com/dinpay/ipp/bankGateway/bankback/servlet/BankNativeScanPayReturn.java
+
+
+##########第二个版本 14:37 2016/7/15###########
+2980 接口组--中信微信收款新增一新通道 
+
+IPPAccessGateway
+IPPAccessGateway/src/main/java/com/dinpay/ipp/accessgateway/access/service/PayService.java
+
+##########第一个版本18:27 2016/7/14###########
+2980 接口组--中信微信收款新增一新通道 
+
+SystemDomain
+
+/DPP/BusinessModel/SystemDomain/src/main/java/com/dinpay/dpp/domain/system/enums/PayChannelCode.java
+
+InstructionService(SystemDomain)
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/instruction/impl/NativeScanPayInstruction.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/validate/impl/NativeScanPaymentResultValidateImpl.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/refund/impl/NativeScanPayRefundServiceImpl.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/instruction/GetPayInstrutctionFactory.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/refund/OrderRefundFactory.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/service/pay/validate/PaymentResultValidateFactory.java
+InstructionService/src/main/java/com/dinpay/dpp/csp/instruction/comm/util/bankfile/NativeScanProperties.java
+
+CSPI/conf/bankproperties/native/
+新增
+NATIVE_PAY_NEW_MERCHANTS.properties
+NATIVE_PAY_NEW.properties
+NATIVE_SCANPAY_MERCHANTS.properties
+NATIVE_SCANPAY.properties
+
+
+CSPQueryInstructionService(SystemDomain)
+CSPQueryInstructionService/src/main/java/com/dinpay/dpp/csp/queryBank/service/query/query/QueryOrderResultFactory.java
+CSPQueryInstructionService/src/main/java/com/dinpay/dpp/csp/queryBank/service/query/query/impl/NativeScanPayQueryOrderResultImpl.java
+CSPQueryInstructionService/src/main/java/com/dinpay/dpp/csp/queryBank/comm/bankfile/NativeScanProperties.java
+
+CSPQ/conf/bankproperties/native/ 新增
+
+NATIVE_PAY_NEW.properties
+NATIVE_SCANPAY.properties
+
+IPPBankGateway(SystemDomain)
+IPPBankGateway/WebRoot/WEB-INF/web.xml
+IPPBankGateway/src/main/java/com/dinpay/ipp/bankGateway/bankback/servlet/BankNativeScanPayReturn.java
